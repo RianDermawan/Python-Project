@@ -1,0 +1,6 @@
+We should find the data whose: 
+1. column 'RR' is more than 80
+2. column 'ddd_x' is max?
+My idea's is:
+1. if column 'RR' <= 80 convert to NaN because if we direcly slicing with condition in column 'RR' > 80 then some data is missing. It won't count all data. 
+Our goal is count the data even condition not satisfy. So, if condition not satisfy then we count for some data is 0.
